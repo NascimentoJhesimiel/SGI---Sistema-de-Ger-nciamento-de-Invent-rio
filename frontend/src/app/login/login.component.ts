@@ -27,7 +27,7 @@ export class LoginComponent {
       !this.formData.email || 
       !this.formData.password 
     ){
-      this.showMessage("All fields are required");
+      this.showMessage("Preencha todos os campos");
       return;
     }
 
@@ -41,8 +41,7 @@ export class LoginComponent {
         this.router.navigate(["/dashboard"]);
       }
     } catch (error:any) {
-      console.log(error)
-      this.showMessage(error?.error?.message || error?.message || "Unable to Login a user" + error)
+      this.showMessage(error?.error?.message || error?.message || "Não foi possível entrar" + error)
       
     }
   }

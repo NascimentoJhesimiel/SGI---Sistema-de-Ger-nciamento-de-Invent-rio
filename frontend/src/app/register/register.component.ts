@@ -31,7 +31,7 @@ export class RegisterComponent {
       !this.formData.phoneNumber || 
       !this.formData.password 
     ){
-      this.showMessage("All fields are required");
+      this.showMessage("Preencha todos os campos");
       return;
     }
 

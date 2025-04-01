@@ -1,3 +1,4 @@
+
 .dashboard-layout {
     display: flex;
     height: 100vh;
@@ -25,6 +26,10 @@
     padding: 0;
     margin-bottom: 0;
     font-weight: 900;
+    cursor: default;
+    }
+    .ims h1:hover{
+        color: #17a2b8;
     }
      
     .nav-links {

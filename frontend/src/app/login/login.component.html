@@ -1,27 +1,30 @@
-<div class="auth-container">
-    <h2>Login</h2>
+<div class="auth-container w-xl my-32 mx-auto p-5 border-2 border-zinc-200 rounded-2xl text-2xl">
+  <h2 class="text-center mb-5 text-3xl">Login</h2>
     <p *ngIf="message" class="message">{{ message }}</p>
   
-    <form (ngSubmit)="handleSubmit()">
+    <form (ngSubmit)="handleSubmit()" class="flex flex-col space-y-2">
 
       <input
         type="email"
-        placeholder="Email ..."
+        placeholder="Email"
         [(ngModel)]="formData.email"
         name="email"
         required
+        class="mb-2.5 p-2.5 text-xl  border-2 border-stone-400 rounded-md focus:border-sky-600 focus:outline-none focus:ring-1 focus:ring-sky-600"
       />
+
       <input
         type="password"
-        placeholder="Psssword ..."
+        placeholder="Password"
         [(ngModel)]="formData.password"
         name="password"
         required
+        class="mb-2.5 p-2.5 text-xl border-red-400 border-2  rounded-md focus:border-sky-600 focus:outline-none focus:ring-1 focus:ring-sky-600"
       />
 
   
-      <button type="submit">Login</button>
-    </form>
-    <p>Don't have an account?<a routerLink="/register" routerLinkActive="router-link-active" >Register</a></p>
-  </div>
+      <button type="submit" class="w-full p-3 bg-sky-600 text-white border-none rounded-sm cursor-pointer text-sm my-5 mx-auto hover:bg-gray-600">Login</button>
+  </form>
+  <p class="text-center font-medium">Não possui uma conta?<a routerLink="/register" routerLinkActive="router-link-active" class="text-sky-600 no-underline ml-4 font-bold hover:underline">Registre-se</a></p>
+</div>
   

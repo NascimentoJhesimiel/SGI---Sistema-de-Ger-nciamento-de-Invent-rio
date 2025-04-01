@@ -1,7 +1,7 @@
 <div class="dashboard-layout">
   <!-- SIDEBAR -->
   <div class="sidebar">
-    <h1 class="ims">IMS</h1>
+    <h1 class="ims" routerLink="/login">IMS</h1>
     <ul class="nav-links">
       <li *ngIf="isAuth()"><a routerLink="/dashboard">Dashbaord</a></li>
       <li *ngIf="isAuth()"><a routerLink="/transaction">Transactions</a></li>
@@ -11,8 +11,8 @@
       <li *ngIf="isAuth()"><a routerLink="/purchase">Purchase</a></li>
       <li *ngIf="isAuth()"><a routerLink="/sell">Sell</a></li>
       <li *ngIf="isAuth()"><a routerLink="/profile">Profile</a></li>
-      <li *ngIf="!isAuth()"><a routerLink="/login">Login</a></li>
-      <li *ngIf="!isAuth()"><a routerLink="/register">Register</a></li>
+      <!-- <li *ngIf="!isAuth()"><a routerLink="/login">Login</a></li> -->
+      <!-- <li *ngIf="!isAuth()"><a routerLink="/register">Register</a></li> -->
       <li *ngIf="isAuth()"><a (click)="logOut()" >Logout</a></li>
     </ul>
   </div>

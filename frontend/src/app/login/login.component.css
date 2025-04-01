@@ -11,7 +11,7 @@
     /* LOGIN AND REGISTER STYLING */
     .auth-container {
     width: 500px;
-    margin: 8rem auto;
+    margin: 12rem auto;
     padding: 20px;
     border: 1px solid #eee;
     border-radius: 5px;
@@ -72,9 +72,13 @@
     color: #17a2b8;
     text-decoration: none;
     font-weight: 700;
+    margin-left: 10px;
     }
      
     .auth-container a:hover {
     text-decoration: underline;
     }
-    
+    .message{
+        color: red;
+        margin: 10px 0 10px;
+    }

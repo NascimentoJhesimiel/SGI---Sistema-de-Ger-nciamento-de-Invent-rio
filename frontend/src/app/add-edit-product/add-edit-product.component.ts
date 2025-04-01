@@ -9,7 +9,7 @@ import { ActivatedRoute, Router } from '@angular/router';
   standalone: true,
   imports: [FormsModule, CommonModule],
   templateUrl: './add-edit-product.component.html',
-  styleUrl: './add-edit-product.component.css',
+  styleUrl: './add-edit-product.component.css'
 })
 export class AddEditProductComponent implements OnInit {
   constructor(

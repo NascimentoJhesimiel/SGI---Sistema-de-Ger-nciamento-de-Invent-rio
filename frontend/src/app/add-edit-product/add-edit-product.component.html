@@ -3,7 +3,7 @@
     <h1>{{isEditing? 'Edit Product' : 'Add Product'}}</h1>
     <form (submit)="handleSubmit($event)">
         <div class="form-group">
-            <label for="">Product Name</label>
+            <label for="">Nome do Produto</label>
             <input type="text" [(ngModel)]="name" name="name" required>
         </div>
 
@@ -13,32 +13,32 @@
         </div>
 
         <div class="form-group">
-            <label for="">Stock Quantity</label>
+            <label for="">Quantidade</label>
             <input type="number" [(ngModel)]="stockQuantity" name="stockQuantity" required>
         </div>
 
         <div class="form-group">
-            <label for="">Price</label>
+            <label for="">Preço</label>
             <input type="number" [(ngModel)]="price" name="price" required>
         </div>
 
 
         <div class="form-group">
-            <label for="">Description</label>
+            <label for="">Descrição</label>
             <textarea [(ngModel)]="description" name="description" required></textarea>
         </div>
 
 
         <div class="form-group">
-            <label for="">Category</label>
+            <label for="">Categoria</label>
             <select [(ngModel)]="categoryId" name="categoryId" id="" required>
-                <option value="">Select a category</option>
+                <option value="">Selecione uma categoria</option>
                 <option *ngFor="let category of categories" [value]="category.id">{{category.name}}</option>
             </select>
         </div>
 
         <div class="form-group">
-            <label for="">Product Image</label>
+            <label for="">Imagem</label>
             <input type="file" (change)="handleImageChange($event)">
             <div *ngIf="imageUrl">
                 <img [src]="imageUrl" alt="preview" class="image-preview">
