@@ -3,8 +3,6 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import CryptoJS from "crypto-js";
 
-
-
 @Injectable({
   providedIn: 'root',
 })
@@ -14,7 +12,7 @@ export class ApiService {
 
   authStatuschanged = new EventEmitter<void>();
   private static BASE_URL = 'http://localhost:4200';
-  private static ENCRYPTION_KEY = "phegon-dev-inventory";
+  private static ENCRYPTION_KEY = "jhesimiel-SGI";
 
 
   constructor(private http: HttpClient) {}
